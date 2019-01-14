@@ -1,0 +1,144 @@
+.vnk-box {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #cfd0d5;
+  z-index: 9999;
+  border-top: 1px solid #99989d;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  -webkit-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.vnk-box.vnk-box-show {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.vnk-box-header {
+  width: 100%;
+  height: 17%;
+  background-color: #eff0f2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.vnk-box-body {
+  width: 100%;
+  height: 83%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.vnk-box-body:after {
+  content: '';
+  display: table;
+  clear: both;
+  zoom: 1;
+}
+
+.vnk-box-item {
+  width: 31%;
+  height: 21.2%;
+  line-height: 21.2%;
+  margin-left: 1.75%;
+  margin-top: 1.75%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  outline: 0;
+  border: none;
+  font-size: 5.1389vw;
+  color: #000;
+}
+
+.vnk-box-key {
+  border-radius: 1.75vw;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 1px #808186;
+  -moz-box-shadow: 0 1px 1px #808186;
+  box-shadow: 0 1px 1px #808186;
+}
+
+.vnk-box-delete-icon {
+  height: 5.1389vw;
+}
+
+.vnk-box-dot {
+  font-size: 8vw;
+}
+
+.vnk-box-key:active {
+  background-color: #b6c2d0;
+}
+
+.vnk-box-null {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.vnk-box-input {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.vnk-box-input.focus:after {
+  content: '|';
+  color: #0099ff;
+  font-weight: 700;
+  -webkit-animation: vnk-input-focus 0.5s linear alternate infinite;
+  -moz-animation: vnk-input-focus 0.5s linear alternate infinite;
+  -o-animation: vnk-input-focus 0.5s linear alternate infinite;
+  animation: vnk-input-focus 0.5s linear alternate infinite;
+}
+
+.vnk-key-ok {
+  display: inline-block;
+  color: #0375f2;
+  font-weight: 500;
+  font-size: 5.1389vw;
+}
+
+@keyframes vnk-input-focus {
+  0% {
+    color: #0099ff;
+  }
+  49% {
+    color: #0099ff;
+  }
+  51% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+@-webkit-keyframes vnk-input-focus {
+  0% {
+    color: #0099ff;
+  }
+  49% {
+    color: #0099ff;
+  }
+  51% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "virtual-numeric-keypad",
+  "version": "1.0.0",
+  "description": "虚拟数字键盘",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "a"
+  },
+  "keywords": [
+    "keyboard",
+    "键盘",
+    "number"
+  ],
+  "author": "Jacky_Kang",
+  "license": "ISC"
+}
