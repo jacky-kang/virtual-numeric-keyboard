@@ -1,6 +1,6 @@
 {
   "name": "virtual-numeric-keyboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "虚拟数字键盘",
   "main": "index.js",
   "scripts": {
