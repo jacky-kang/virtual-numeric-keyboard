@@ -3,6 +3,7 @@
   var keyHeader, keyBody, itemList
   var keyOk
   var events = {}
+  var doms = []
 
   if (!keyboard) {
     keyboard = document.createElement('DIV')
@@ -119,11 +120,13 @@
       }
     },
     add: function (dom) {
-      if (dom && Object.prototype.toString.call(dom) === '[object HTMLInputElement]') {
+      if (dom && Object.prototype.toString.call(dom) === '[object HTMLInputElement]' && doms.indexOf(dom) < 0) {
         // dom.addEventListener('focus', function () {
         //   document.activeElement.blur()
         //   VNK.show()
         // })
+
+        doms.push(dom)
 
         var parent = dom.parentElement
         var box = document.createElement('DIV')
