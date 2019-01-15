@@ -86,6 +86,7 @@
         if (typeof evt === 'function') evt()
       })
       keyboard.classList.remove('vnk-box-show')
+      VNK._target.dispatchEvent(new Event('input'))
       var _target = VNK._target
       setTimeout(function () {
         if (_target) _target.dispatchEvent(new Event('input'))
