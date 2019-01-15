@@ -86,7 +86,9 @@
         if (typeof evt === 'function') evt()
       })
       keyboard.classList.remove('vnk-box-show')
-      VNK._target.dispatchEvent(new Event('input'))
+      if (Object.prototype.toString.call(doms[i]) === '[object HTMLInputElement]') {
+        VNK._target.dispatchEvent(new Event('input'))
+      }
       var _target = VNK._target
       setTimeout(function () {
         if (_target) _target.dispatchEvent(new Event('input'))
