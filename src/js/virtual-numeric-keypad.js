@@ -212,8 +212,10 @@
   })
 
   setInterval(function () {
-    if (Object.prototype.toString.call(VNK._target) === '[object HTMLInputElement]') {
-      VNK._target.dispatchEvent(new Event('input'))
+    for (var i = 0; i < doms.length; i++) {
+      if (Object.prototype.toString.call(doms[i]) === '[object HTMLInputElement]') {
+        doms[i].dispatchEvent(new Event('input'))
+      }
     }
   }, 500)
 
