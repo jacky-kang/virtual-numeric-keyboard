@@ -186,6 +186,8 @@
           }
           dom.dispatchEvent(new Event('input'))
         })
+      } else if (doms.indexOf(dom) > -1) {
+        console.warn('重复添加', dom)
       } else {
         throw new Error('必须传入DOM对象')
       }
